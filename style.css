@@ -177,6 +177,7 @@ article
 {
     width: 625px;
     margin-right: 15px;
+	float:left;
 }
 
 
@@ -196,6 +197,7 @@ aside
     padding: 10px;
     color: white;
     font-size: 0.9em;
+	float:left;
 }
 
 
@@ -211,6 +213,15 @@ aside img
 footer
 {
     padding-top: 25px;
+	
+	clear: both;
+	header:50px;
+	line-height:50px;
+	color:444px;
+	text-align:center;
+	background:white;
+	box-shadow: 0 0 2px #ccc;
+
 }
 
 footer p, footer ul
@@ -223,3 +234,22 @@ footer h1
     font-size: 1.1em;
 }
 
+
+
+.video-responsive {
+position: relative;
+padding-bottom: 56.25%; /* 16/9 ratio */
+padding-top: 30px; /* IE6 workaround*/
+height: 0;
+overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+position: absolute;
+top: 0;
+left: 0;
+width: auto;
+height: auto;
+}
